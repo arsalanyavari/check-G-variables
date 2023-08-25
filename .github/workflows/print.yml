@@ -16,7 +16,7 @@ on:
   repository_dispatch:
 
 jobs:
-  build:
+  print-variables:
     runs-on: ubuntu-latest
     steps:
       - name: Print actions github builtin variables
