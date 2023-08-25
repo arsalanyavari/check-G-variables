@@ -26,4 +26,4 @@ jobs:
 
       - name: alaki
         if: ${{ github.event.ref_type }} == "tag"
-        run: echo "salam bache ha"
+        run: echo ${{ github.event.ref_type }}
