@@ -1,9 +1,19 @@
 name: PRINTING WORKFLOW
 
 on:
-  workflow_run:
-    workflows:
+  push:
+  pull_request:
+  release:
+  create:
+    tags:
       - '*'
+  issues:
+  issue_comment:
+  pull_request_review:
+  pull_request_review_comment:
+  milestone:
+  label:
+  repository_dispatch:
 
 jobs:
   build:
